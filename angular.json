@@ -24,7 +24,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/lingash-portfolio",
+            "outputPath": {
+              "base": "dist/lingash-portfolio",
+              "browser": ""
+            },
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -118,3 +121,4 @@
     "analytics": false
   }
 }
+
