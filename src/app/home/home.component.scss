@@ -1,0 +1,42 @@
+.portfolio-header {
+    background: #d7e3ff;
+    color: #001b3f;
+
+    .name {
+        font-size: 56px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .profession {
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.main-content {
+    color: #44474e;
+    background: #faf9fd;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.my-carousel {
+    background: #faf9fd;
+    height: 400px;
+
+    .carousel-caption {
+        color: #44474e;
+    }
+    .carousal-image{
+        padding: 2%;
+        height: 380px;
+    }
+
+    .nav-icon {
+        color: #44474e; 
+    }
+
+}
+
