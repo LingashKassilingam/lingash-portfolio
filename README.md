@@ -1,11 +1,13 @@
 # LingashPortfolio
 
 This project was build using Angular 18, Angular Material, Bootstrap, SCSS
+
 This Project is live at - https://lingashkassilingam.github.io/lingash-portfolio
 
 How to Deploy Angular 18 app to GitHub Pages (Docs Method) -
 There are two methods - Docs and Root (Using ghPages from Angular CLI)
 I have used Docs method.
+
 Step 1 - Update the angular.json file output path
  "outputPath": {
               "base": "docs",
