@@ -1,0 +1,351 @@
+<div class="new-home-section">
+  <nav id="navbar-example2" class="navbar custom-navbar">
+    <!-- <a class="navbar-brand p-2" style="color: #ffffff;">Lingash K</a> -->
+    <ol class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1" style="color: #ffffff;">
+          <img class="new-icon user-icon" src="images/new-icons/user-icon-white.svg" alt="user-icon">
+          Lingash K
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2" style="color: #ffffff;">
+          <img class="new-icon work-icon" src="images/new-icons/work-icon-white.svg" alt="work-icon">
+          Work Experience
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3" style="color: #ffffff;">
+          <img class="new-icon skill-icon" src="images/new-icons/skill-icon-white.svg" alt="skill-icon">
+          Skills
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4" style="color: #ffffff;">
+          <img class="new-icon certificate-icon" src="images/new-icons/certificate-icon-white.svg"
+            alt="certificate-icon">
+          Certifications
+        </a>
+      </li>
+    </ol>
+    <div>
+      <div style="display: flex;">
+        <div class="explore-icons p-1">
+          <a href="https://github.com/LingashKassilingam" target="_blank" title="Github Profile">
+            <img class="new-icon git-hub-icon" src="images/skills/git-hub-icon-white.svg" alt="git-hub-icon">
+          </a>
+        </div>
+        <div class="explore-icons p-1">
+          <a href="https://www.credly.com/users/lingash-kassilingam" target="_blank" title="Credly Profile">
+            <img class="new-icon credly-icon" src="images/skills/credly-logo-icon-white.svg" alt="credly-icon">
+          </a>
+        </div>
+        <div class="explore-icons p-1">
+          <a href="https://www.linkedin.com/in/lingash-kassilingam-224445274" target="_blank" title="Linkedin Profile">
+            <img class="new-icon linkedin-icon-white" src="images/skills/linkedin-icon-white.svg" alt="linkedin-icon">
+          </a>
+        </div>
+        <div class="explore-icons p-1">
+          <a href="https://www.linkedin.com/in/lingash-kassilingam-224445274" target="_blank" title="Resume Download">
+            <img class="new-icon resume-icon" src="images/skills/resume-icon.svg" alt="resume-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <div class="sections">
+      <div id="scrollspyHeading1">
+      <h6>
+        <img class="new-icon user-icon" src="images/new-icons/user-icon.svg" alt="user-icon">
+        About me
+      </h6>
+    </div>
+    
+    <mat-divider></mat-divider>
+
+    <div>
+      A highly motivated and innovative Full Satck developer with Experience in Artificial Intelligence, Python,
+      Java, Javascript and Angular.
+      <br>
+      Certified Google Associate Cloud Engineer(ACE), demonstrating proficiency in designing, developing and deploying
+      scalable solutions
+      across on-premise and cloud environments(Google Cloud Platform).
+      <br>
+      Adept at building robust API's, automating processes and developing interactive user interfaces.
+      <br>
+      Possesses strong analytical and problem solving skils, with a record of delivering impactful technical solutions,
+      including AI powered applications.
+    </div>
+    </div>
+    
+    
+    <div class="sections">
+    <div id="scrollspyHeading2">
+      <h6>
+        <img class="new-icon work-icon" src="images/new-icons/work-icon.svg" alt="work-icon">
+        Work Experience
+      </h6>
+    </div>
+    
+    <mat-divider></mat-divider>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 para-section">
+          Developed and deployed an AI chatbot leveraging google gemini models to transform user queries into
+          SQL for Oracle DB interaction and implement RAG functionalities for document based Q&A. This
+          significantly enhanced user self-service capablities and information retrieval.
+        </div>
+        <div class="col-8">
+          <pre class="mermaid">
+            architecture-beta
+            group onprem(server)[ONPREM]
+
+            service angular(logos:angular-icon)[Angular] in onprem
+            service axway(server)[API Gateway] in onprem
+            service fastapi(logos:fastapi)[FastAPI] in onprem
+            service gemini(logos:google-gemini)[GeminiAI] in onprem
+            service java(logos:java)[Java] in onprem
+            service oracle(logos:oracle)[OracleDB] in onprem
+
+            angular:R <--> L:axway
+            axway:R <--> L:fastapi
+            fastapi:R <--> L:gemini
+            axway:B <--> T:java
+            java:R <--> L:oracle
+          </pre>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="col-4 para-section">
+          Developed secure and scalable on-premise to Google Cloud Platform(GCP) API connections.
+          This included deploying Spring Boot REST APIs on OpenShift to fetch data from BigQuery in GCP,
+          facilitating seamless hybrid cloud data access.
+        </div>
+        <div class="col-8">
+          <pre class="mermaid">
+            architecture-beta
+            group onprem(server)[ONPREM]
+            group gcp(logos:google-cloud)[GCP]
+
+            service angular(logos:angular-icon)[Angular] in onprem
+            service axway(server)[API Gateway] in onprem
+            service openshift(logos:openshift)[Openshift] in onprem
+            service spring(skill-icons:spring-light)[SpringBoot] in onprem
+            service bigquery(gcp:bigquery)[Bigquery] in gcp
+
+            angular:R --> L:axway
+            axway:R --> L:openshift
+            spring:T -- B:openshift
+            openshift:R --> L:bigquery
+          </pre>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="col-4 para-section">
+          Developed an Angular based onpremise user interface that integrated with Spring Boot REST APIs
+          deployed in GCP Cloud Run, enabling data retrieval from both BigQuery and Cloud SQL Postgres instances.
+        </div>
+        <div class="col-8">
+          <pre class="mermaid">
+            architecture-beta
+            group onprem(server)[ONPREM]
+            group gcp(logos:google-cloud)[GCP]
+
+            service angular(logos:angular-icon)[Angular] in onprem
+            service axway(server)[API Gateway] in onprem
+            service cloudrun(logos:google-cloud-run)[Cloudrun] in gcp
+            service spring(skill-icons:spring-light)[SpringBoot] in gcp
+            service bigquery(gcp:bigquery)[Bigquery] in gcp
+
+            angular:R --> L:axway
+            axway:R --> L:cloudrun
+            spring:T -- B:cloudrun
+            cloudrun:R --> L:bigquery
+          </pre>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="col-4 para-section">
+          Engineered a Python based automation script to generate and deliver weekly email reports with
+          embedded excel files sourced from an on-premise Oracle database hosted in Unix server,
+          drastically improving reporting efficiency.
+        </div>
+        <div class="col-8">
+          <pre class="mermaid">
+            architecture-beta
+            group onprem(server)[ONPREM]
+
+            service python(logos:python)[Python Script] in onprem
+            service oracle(logos:oracle)[Oracle DB] in onprem
+            service excel(vscode-icons:file-type-excel)[Exported Excel] in onprem
+            service mail(vscode-icons:file-type-outlook)[Mail] in onprem
+
+            python:R --> L:oracle
+            oracle:R --> L:excel
+            excel:R --> L:mail
+          </pre>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="col-4 para-section">
+          Implemented a comprehensive bulk data export email functionality, allowing users to
+          request large datasets from Bigquery via a UI, convert them to excel, and securely store them in
+          Cloud storage buckets using Pub/Sub. Users then receive signed URLs for download,
+          enhancing data accessability.
+        </div>
+        <div class="col-8">
+          <pre class="mermaid">
+            architecture-beta
+            group onprem(server)[ONPREM]
+            group gcp(logos:google-cloud)[GCP]
+
+            service angular(logos:angular-icon)[Angular] in onprem
+            service axway(server)[API Gateway] in onprem
+            service openshift(logos:openshift)[Openshift] in onprem
+            <!-- service spring(skill-icons:spring-light)[SpringBoot] in onprem -->
+            service bigquery(gcp:bigquery)[Bigquery] in gcp
+            service bucket(gcp:cloud-storage)[Cloud Storage] in gcp
+            service cloudrun(logos:google-cloud-run)[Cloudrun] in gcp
+            service email(vscode-icons:file-type-outlook)[Mail] in onprem
+
+            angular:R --> L:axway
+            axway:R --> L:openshift
+            <!-- spring:T -- B:openshift -->
+            openshift:R --> L:bigquery
+            bigquery:B --> T:bucket
+            cloudrun:R <-- L:bucket
+            cloudrun:L --> R:email
+          </pre>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="col-4 para-section">
+          Created multiple self service portals with full CRUD capabilities for analytics and report submissions.
+          these portals featured interactive dashboards with dynamic charts, tables and filters, including
+          customizable columns, sorting, searching, excel export and pagination. Additionally, integrated
+          PDF export functionality for easy sharing and reporting.
+        </div>
+        <div class="col-8">
+          <pre class="mermaid">
+            architecture-beta
+            group onprem(server)[ONPREM]
+
+            service angular(logos:angular-icon)[Angular] in onprem
+            service pdf(vscode-icons:file-type-pdf2)[PDF] in onprem
+            service excel(vscode-icons:file-type-excel)[Excel] in onprem
+            service mail(vscode-icons:file-type-outlook)[Mail] in onprem
+          </pre>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="sections">
+    <div id="scrollspyHeading3">
+      <h6 >
+      <img class="new-icon skill-icon" src="images/new-icons/skill-icon.svg" alt="skill-icon">
+      Skills
+    </h6>
+    </div>
+    
+    <mat-divider></mat-divider>
+    <div>
+      <p>
+        Artificial Intelligence: AI chatbot Development, Conversational AI, Google Gemini models,
+        RAG(Retrieval Augmented Generation)
+        <br>
+        Programming Languages: Python, Java, Javascript, Typescript, SQL.
+        <br>
+        Frontend Development: Angular, Javascript, HTML, CSS.
+        <br>
+        Backend Development: Java, Springboot.
+        <br>
+        Database: Oracle, Bigquery, Cloud SQL(Postgres SQL).
+        <br>
+        Cloud Platforms: Google Cloud Platform(GCP).
+        (Bigquery, Cloud Run, Pub/Sub, Cloud Storage buckets)
+        <br>
+        Tools & Methodologies: RESTful APIs, GIT, Agile/Scrum.
+      </p>
+      <div class="container-fluid">
+            <div class="row g-2">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Programming Languages
+                        </div>
+                        <div class="card-body">
+                            <img class="javascript-icon p-2" src="images/skills/javascript-icon.svg" alt="javascript-icon">
+                            <img class="java-icon p-2" src="images/skills/java-icon.svg" alt="java-icon">
+                            <img class="sql-icon p-2" src="images/skills/sql-icon.svg" alt="sql-icon">
+                            <img class="python-icon p-2" src="images/skills/python-icon.svg" alt="python-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Frameworks / Libraries
+                        </div>
+                        <div class="card-body">
+                            <img class="angular-icon p-2" src="images/skills/angular-icon.svg" alt="angular-icon">
+                            <img class="spring-boot-icon p-2" src="images/skills/spring-boot-icon.svg" alt="spring-boot-icon">
+                            <img class="bootstrap-icon p-2" src="images/skills/bootstrap-icon.svg" alt="bootstrap-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col h-100">
+                    <div class="card">
+                        <div class="card-header">
+                            Platforms / Tools
+                        </div>
+                        <div class="card-body">
+                            <img class="google-cloud-icon p-2" src="images/skills/google-cloud-icon.svg" alt="google-cloud-icon">
+                            <img class="git-icon p-2" src="images/skills/git-icon.svg" alt="git-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sections">
+<div id="scrollspyHeading4">
+  <h6>
+      <img class="new-icon certificate-icon" src="images/new-icons/certificate-icon.svg" alt="certificate-icon">
+      Certifications
+    </h6>
+</div>
+    
+    <mat-divider></mat-divider>
+    <div id="carouselExampleCaptions" class="col carousel slide my-carousel" data-bs-ride="false">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="images/certifications/lingash-gcp-ace.PNG" class="carousal-image" alt="gcp-ace">
+        </div>
+        <div class="carousel-item">
+          <img src="images/certifications/ibm-skillsbuild-ai-fundamentals.PNG" class="carousal-image"
+            alt="ibm-skillsbuild-ai-fundamentals">
+        </div>
+        <div class="carousel-item">
+          <img src="images/certifications/hackerrank-angular-basic.PNG" class="carousal-image" alt="angular-basic">
+        </div>
+        <div class="carousel-item">
+          <img src="images/certifications/hackerrank-javascript-basic.PNG" class="carousal-image"
+            alt="javascript-basic">
+        </div>
+        <div class="carousel-item">
+          <img src="images/certifications/hackerrank-sql-basic.PNG" class="carousal-image" alt="sql-basic">
+        </div>
+      </div>
+      <button class="carousel-control-prev btn btn-secondary" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon text-bg-secondary" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next btn btn-secondary" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon text-bg-secondary" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+</div>

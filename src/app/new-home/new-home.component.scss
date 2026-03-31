@@ -1,0 +1,61 @@
+.new-home-section {
+
+    background-color: #00a8e8;
+    color: #00171f;
+
+    .custom-navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #003459;
+        color: #ffffff;
+    }
+
+    .sections {
+        border: 1px solid #003459;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .section-header {
+        background-color: #007ea7;
+        color: #ffffff;
+    }
+
+    .new-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .explore-icons {
+        padding-right: 15px !important;
+    }
+
+    .icon-top {
+        color: #ffffff !important;
+    }
+
+    .para-section {
+        margin-top: 35px;
+    }
+
+    .my-carousel {
+        background: #faf9fd;
+        height: 400px;
+
+        .carousel-caption {
+            color: #44474e;
+        }
+
+        .carousal-image {
+            padding: 2%;
+            height: 380px;
+        }
+
+        .nav-icon {
+            color: #44474e;
+        }
+
+    }
+}
