@@ -5,7 +5,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { NewHomeComponent } from './new-home/new-home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect to home
+  { path: '', redirectTo: '/new-home', pathMatch: 'full' }, // Redirect to home
   { path: 'home', component: HomeComponent },
   { path: 'new-home', component: NewHomeComponent },
   { path: '**', component: ErrorPageComponent } // Wildcard route
