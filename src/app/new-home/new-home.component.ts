@@ -1,4 +1,4 @@
-import { afterNextRender, Component, computed, OnInit, signal } from '@angular/core';
+import { afterNextRender, Component, OnInit } from '@angular/core';
 import mermaid from "mermaid";
 
 @Component({
@@ -7,11 +7,6 @@ import mermaid from "mermaid";
   styleUrl: './new-home.component.scss'
 })
 export class NewHomeComponent implements OnInit {
-
-  name = signal('Lingash');
-  age = signal(27);
-
-  isMajor = computed(() => this.age() > 18);
 
   constructor() {
     afterNextRender({
@@ -45,7 +40,6 @@ export class NewHomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.age.set(18);
   }
 
   // constructor(@Inject(PLATFORM_ID) private _platformId: object) {
